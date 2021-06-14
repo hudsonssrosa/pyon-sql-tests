@@ -21,7 +21,6 @@ debug_flag_environment =
 debug_flag_target = local
 debug_flag_os = MacOS Catalina
 debug_flag_os_version =
-debug_flag_device_name =
 debug_flag_mode = mysql
 
 debug_behave_tags = demo-mysql

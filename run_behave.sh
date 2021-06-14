@@ -10,7 +10,6 @@ PYON_MODE='mysql'
 
 PYON_OS='MacOS Catalina'
 PYON_OS_VERSION=
-PYON_DEVICE='local'
 
 PYON_TAGS='demo-mysql'
 
@@ -23,6 +22,5 @@ python behave_runner.py --target $PYON_TARGET \
                         --mode $PYON_MODE \
                         --os "$PYON_OS" \
                         --os_version "$PYON_OS_VERSION" \
-                        --device_name "$PYON_DEVICE" \
                         --tags "$PYON_TAGS" \
                         --exclude "$PYON_EXCLUDED_TAG"

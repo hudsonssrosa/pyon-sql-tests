@@ -106,10 +106,6 @@ class EnvSettings:
         return str(CONFIG.get("cli-args-debug", "debug_flag_os_version", fallback=None).strip())
 
     @staticmethod
-    def get_debug_flag_device_name():
-        return str(CONFIG.get("cli-args-debug", "debug_flag_device_name", fallback=None).strip())
-
-    @staticmethod
     def show_logo():
         logo = Color.blue(
             """

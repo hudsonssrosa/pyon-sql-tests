@@ -77,7 +77,6 @@ Into this file, to consider a development or debug setting, ensure the property 
     debug_flag_target = local
     debug_flag_os = MacOS Catalina
     debug_flag_os_version =
-    debug_flag_device_name =
     debug_flag_mode = mysql
 
     debug_behave_tags = demo-mysql
@@ -99,7 +98,6 @@ Into this script file, you can set those environment variables, like this:
     PYON_MODE='mysql'
     PYON_OS='MacOS Catalina'
     PYON_OS_VERSION=
-    PYON_DEVICE='local'
     PYON_TAGS='demo-mysql'
 ```
 
@@ -197,29 +195,29 @@ After having a scenario defined, make sure that `development_mode` is `false` in
 ```bash
     You can implement step definitions for undefined steps with these snippets:
 
-    @given(u'that "pyon_schema_tests" is connected1')
+    @given(u'that "pyon_schema_tests" is connected')
     def step_impl(context):
-        raise NotImplementedError(u'STEP: Given that "pyon_schema_tests" is connected1')
+        raise NotImplementedError(u'STEP: Given that "pyon_schema_tests" is connected')
 
 
-    @given(u'that the tables tb_test_resource, tb_test_type, tb_category and tb_feature are created1')
+    @given(u'that the tables tb_test_resource, tb_test_type, tb_category and tb_feature are created')
     def step_impl(context):
-        raise NotImplementedError(u'STEP: Given that the tables tb_test_resource, tb_test_type, tb_category and tb_feature are created1')
+        raise NotImplementedError(u'STEP: Given that the tables tb_test_resource, tb_test_type, tb_category and tb_feature are created')
 
 
-    @when(u'user populates these tables1')
+    @when(u'user populates these tables')
     def step_impl(context):
-        raise NotImplementedError(u'STEP: When user populates these tables1')
+        raise NotImplementedError(u'STEP: When user populates these tables')
 
 
-    @then(u'the user can select with a join between tb_feature, tb_test_type and tb_category tables1')
+    @then(u'the user can select with a join between tb_feature, tb_test_type and tb_category tables')
     def step_impl(context):
-        raise NotImplementedError(u'STEP: Then the user can select with a join between tb_feature, tb_test_type and tb_category tables1')
+        raise NotImplementedError(u'STEP: Then the user can select with a join between tb_feature, tb_test_type and tb_category tables')
 
 
-    @then(u'the feature registers are showed1')
+    @then(u'the feature registers are showed')
     def step_impl(context):
-        raise NotImplementedError(u'STEP: Then the feature registers are showed1')
+        raise NotImplementedError(u'STEP: Then the feature registers are showed')
 ```
 
 ##### 1.3. Create a Step
