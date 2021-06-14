@@ -1,0 +1,29 @@
+[report]
+# Set 'false' the report generation if is running on CI server
+report_library_path = .resources/allure-2.13.2/bin/allure
+generate_report = true
+
+[default]
+db_user =
+db_password =
+db_host =
+db_name =
+db_driver_abs_path =
+# db_driver_abs_path = .resources\\instantclient_18_5
+
+[cli-args-debug]
+# To DEBUG TESTS, change to 'true' the 'development_mode' property (only in this case)
+
+development_mode = false
+debug_flag_environment =
+
+# Get more information about Pyon CLI, type in the terminal console: "python behave_runner.py --help"
+debug_flag_target = local
+debug_flag_os = MacOS Catalina
+debug_flag_os_version =
+debug_flag_device_name =
+debug_flag_mode = mysql
+
+debug_behave_tags = demo-mysql
+debug_behave_excluded_tags = wip
+
