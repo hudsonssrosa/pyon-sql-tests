@@ -188,7 +188,7 @@ As you could see, add a **tag** (started with @) trying to choose an easy and in
 
 ##### 1.2. Generate the Step definitions
 
-After having a scenario defined, make sure that `development_mode` is `false` in `env_settings.properties` if you want to execute the `python3 behave_runner.py --tags demo-find-product` in the terminal (or set `development_mode` to `true` and include the tag `demo-find-product` to property `debug_behave_tags`). Then, copy the snippet definitions generated automatically in console. You will need to implement your steps using them, like these:
+After having a scenario defined, make sure that `development_mode` is `false` in `env_settings.properties` if you want to execute the `python3 behave_runner.py --tags demo-mysql` in the terminal (or set `development_mode` to `true` and include the tag `demo-mysql` to property `debug_behave_tags`). Then, copy the snippet definitions generated automatically in console. You will need to implement your steps using them, like these:
 
 ```bash
     You can implement step definitions for undefined steps with these snippets:
@@ -327,7 +327,7 @@ To create validation methods for the steps when is necessary (mainly in the `@Th
 ```
 
 ```python
-    my_totals_registers_expected = 10
+    my_total_registers_expected = 10
 ```
 
 ## SELECT THE SCENARIOS TO BE EXECUTED
